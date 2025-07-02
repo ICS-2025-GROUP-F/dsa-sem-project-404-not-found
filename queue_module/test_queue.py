@@ -5,9 +5,6 @@ from queue_module.queue import Queue, Passenger
 
 @pytest.fixture
 def sample_queue():
-    """
-    Fixture: Returns an empty queue before each test.
-    """
     return Queue()
 
 def test_enqueue_increases_size(sample_queue):
@@ -27,7 +24,7 @@ def test_dequeue_returns_correct_passenger(sample_queue):
 
     dequeued = sample_queue.dequeue()
     assert dequeued.name == "Charlie"
-    assert dequeued.ticket_number == "C789"
+    assert dequeued.ticket_number =="C789"
     assert sample_queue.size() == 1
 
 def test_dequeue_empty_raises_error(sample_queue):
