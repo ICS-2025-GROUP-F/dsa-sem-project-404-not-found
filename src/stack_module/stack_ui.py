@@ -3,6 +3,7 @@ from tkinter import messagebox
 from src.stack_module import stack_db
 from src.stack_module.stack import Stack, Passenger
 
+
 stack_db.create_table()
 
 

@@ -3,7 +3,6 @@
 # DSA-SEM-PROJECT-
 DATA STRUCTURES AND ALGORITHMS SEMESTER PROJECT
 
-
 #Stack Module - Airline Reservation System
 ## Features
 - Add (push) passengers to the stack

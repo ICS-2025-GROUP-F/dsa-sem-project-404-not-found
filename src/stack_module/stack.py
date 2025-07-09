@@ -1,6 +1,5 @@
 from typing import Union
 
-
 class Passenger:
     def __init__(self, name, ticket_number):
         self.name = name

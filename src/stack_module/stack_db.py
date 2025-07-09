@@ -1,4 +1,5 @@
 import sqlite3
+
 DB_NAME = 'stack_db.sqlite3'
 
 def get_connection():

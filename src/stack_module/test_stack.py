@@ -1,6 +1,7 @@
 import pytest
 from src.stack_module.stack import Stack, Passenger
 
+
 @pytest.fixture
 def sample_stack():
     return Stack()
