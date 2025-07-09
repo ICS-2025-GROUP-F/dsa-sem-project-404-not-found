@@ -3,6 +3,7 @@ import sqlite3
 DB_NAME = 'linkedlist_db.sqlite3'
 
 
+
 def get_connection():
     return sqlite3.connect(DB_NAME)
 

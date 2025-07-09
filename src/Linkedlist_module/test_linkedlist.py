@@ -5,6 +5,7 @@ from src.Linkedlist_module.linked_list import LinkedList, Passenger
 def sample_list():
     return LinkedList()
 
+
 def test_insert_adds_passenger(sample_list):
     p1 = Passenger("Alice", "A123")
     sample_list.insert(p1)

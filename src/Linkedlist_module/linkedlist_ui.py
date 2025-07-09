@@ -5,6 +5,7 @@ from src.Linkedlist_module import linkedlist_db
 
 linkedlist_db.create_table()
 
+
 class LinkedListApp:
     def _init_(self, root):
         self.root = root
