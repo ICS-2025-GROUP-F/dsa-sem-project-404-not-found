@@ -26,7 +26,7 @@ class QueueApp:
         tk.Button(root,text="Enqueue",command=self.enqueue).grid(row=2,column=0,pady=5)
         tk.Button(root,text="Dequeue", command=self.dequeue).grid(row=2,column=1,pady=5)
         tk.Button(root,text="View Queue",command=self.view_queue).grid(row=3,column=0,columnspan=2)
-
+        tk.Button(root,text="peek",command=self.peek).grid(row=3,column=1)
         self.output = tk.Text(root,height =10,width=40)
         self.output.grid(row=4,column=0, columnspan=2,pady=10)
 
@@ -56,6 +56,13 @@ class QueueApp:
         else:
             for p in self.queue.get_all():
                 self.output.insert(tk.END,f"{p}\n")
+    def peek(self):
+        p=self.queue.peek()
+        self.output.delete(1.0,tk.END)
+        if p is None:
+            self.output.insert(tk.END,"Queue is Empty.\n")
+        else:
+            self.output.insert(tk.END,f"Next Passenger:{p}\n")
 
 if __name__== "__main__":
     root=tk.Tk()
